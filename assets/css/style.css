@@ -1,0 +1,117 @@
+/*===================
+  style.css
+
+  Index
+  - Import Fonts
+  - Typography
+  - Grid
+  - Sections
+  - Footer
+
+  ===================*/
+
+/* ===================
+   Import fonts
+   =================== */
+
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Quicksand");
+
+/* ===================
+   Typography scheme
+   =================== */
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+h2{
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align:center;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align:justify;
+  font-size: 18px;
+}
+
+li{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+}
+
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+
+figurecaption{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13px;
+}
+
+body {
+  background-color: #FFFAFA
+}
+
+/* ===================
+   Grid styles
+   =================== */
+
+.grid-container {
+  display: grid;
+  grid-gap: 15px;
+}
+
+section.grid-container img {
+  width: 100%;
+}
+
+/* ===================
+   Section styles
+   =================== */
+
+div#ds-coll-img {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+div#ds-coll-txt {
+  grid-column: 3 / 9;
+  grid-row: 1 / 2;
+}
+div#ds-dataviz-txt {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+div#ds-dataviz-img {
+  grid-column: 3 / 9;
+  grid-row: 2 / 3;
+}
+div#ds-explained-video{
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+div#ds-video-txt{
+  grid-column:3 / 9;
+  grid-row: 3 / 4;
+}
+
+/* ===================
+   Footer
+   =================== */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+    background-color: none;
+    color: black;
+    text-align: center;
+    padding-top: 20;
+    padding-bottom: 25px;
+  }
